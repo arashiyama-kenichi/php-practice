@@ -99,14 +99,13 @@ foreach ($mix as $pref => $capital) {
 }
 
 // Q10 関数-1
-function sayHi($name)
+unction sayHi($name)
 {
-    echo $name.'さん、こんにちは。'."\n";
+    return $name . "さん、こんにちは。";
 }
 
-sayHi('金谷');  
-sayHi('安藤');
-
+echo sayHi('金谷');  
+echo sayHi('安藤');
 
 
 // Q11 関数-2
