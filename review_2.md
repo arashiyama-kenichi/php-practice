@@ -62,6 +62,25 @@ echo $prev->diff($now)->format('%a')
 
 - 2000-1-1から今日までの合計日数を表示
 
-[public DateInterval::format ( string $format ): string]
-間隔をフォーマットし、フォーマットされた間隔を返す。
-DateTime::diff()または(unknown)その他の結果としての合計日数
+
+DateTimeオブジェクトの$now、$prev。
+①DateTime::diffはふたつの DateTime オブジェクトの差(インターバル)を返す。
+public DateTime::diff(DateTimeInterface $targetObject, bool $absolute = false): DateInterval
+
+②DateInterval::format
+public DateInterval::format(string $format): string
+formatパラメータ文字が%aの場合、DateTime::diff() の結果に使った場合は総日数、それ以外の場合は (unknown)を返す。
+
+
+
+
+$prev = new datetime(‘2000-1-1’) インスタンス化してオブジェクト型のデータ型
+$prev = 2000-1-1 string型のデータ型
+
+
+
+
+
+
+
+
