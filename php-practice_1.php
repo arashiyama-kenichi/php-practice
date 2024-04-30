@@ -55,6 +55,9 @@ $city = [
 foreach($city as $capital){
     echo $capital . "\n";
 }
+// foreach(配列名 as キーもしくはいんでっくす => バリュー){
+//     // 繰り返し処理
+// }
 
 // Q8 連想配列-2
 $city = [
@@ -99,11 +102,14 @@ foreach ($mix as $pref => $capital) {
 }
 
 // Q10 関数-1
-unction sayHi($name)
+
+// 定義
+function sayHi($name)
 {
     return $name . "さん、こんにちは。";
 }
 
+// じっこう
 echo sayHi('金谷');  
 echo sayHi('安藤');
 
@@ -134,15 +140,12 @@ function evaluateGrad($evaluation) {
         case 'A':
         case 'B':
         return '合格'."\n";
-        break;
         
         case 'C':
         return '合格ですが追加課題があります。'."\n";
-        break;
         
         case 'D':
         return '不合格です。'."\n";
-        break;
         
         default:
         return'判定不明です。講師に問い合わせてください。'."\n";
