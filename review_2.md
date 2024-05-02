@@ -73,14 +73,14 @@ formatパラメータ文字が%aの場合、DateTime::diff() の結果に使っ�
 
 
 
+修正回答
+DateTimeオブジェクトをPHPマニュアルで検索します。
+検索結果のDateTimeInterfaceインターフェイス内の
+DateTimeInterface::diffをクリック。
 
-$prev = new datetime(‘2000-1-1’) インスタンス化してオブジェクト型のデータ型
-$prev = 2000-1-1 string型のデータ型
+返り値はふたつの日付の差をあらわす DateIntervalオブジェクトを返す。
 
-
-
-
-
-
-
-
+DateTimeInterface::diff内の参照にある
+DateInterval::format()をクリック
+format(‘%a’)からformat文字がaなので、
+DateTime::diffの結果に使った場合は総日数、それ以外の場合は (unknown)が返り値になる。
