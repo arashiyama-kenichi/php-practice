@@ -74,13 +74,15 @@ formatパラメータ文字が%aの場合、DateTime::diff() の結果に使っ�
 
 
 修正回答
+
 DateTimeオブジェクトをPHPマニュアルで検索します。
 検索結果のDateTimeInterfaceインターフェイス内の
 DateTimeInterface::diffをクリック。
 
 返り値はふたつの日付の差をあらわす DateIntervalオブジェクトを返す。
 
-DateTimeInterface::diff内の参照にある
-DateInterval::format()をクリック
+DateTimeInterface::diff内の返り値（DateIntervalクラス）のリンクをクリック
+DateIntervalクラスのページに遷移する。
+format()をクリック
 format(‘%a’)からformat文字がaなので、
 DateTime::diffの結果に使った場合は総日数、それ以外の場合は (unknown)が返り値になる。
